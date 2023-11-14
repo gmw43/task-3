@@ -7,34 +7,30 @@ import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import TwitterIcon from '@mui/icons-material/Twitter';
 const Profile = (props) => {
     return (
-        <>
+      <>
+        <div className="flex justify-center w-full bg-gray-300 ">
+          <div className="w-4/5 sm:w-4/5 md:w-3/5 lg:w-2/5 xl:w-1/3 bg-white ">
+            <div className="relative">
+              <div className="text-white bg-neutral-700 h-28 flex items-center justify-center text-xl">
+                <h1>{props.companyName}</h1>
+              </div>
+              <div className="absolute inset-0 h-4 mx-auto my-auto w-36 h-36"></div>
+              <div className="h-14 bg-sky-200 flex justify-center">
+                <img
+                  src={img}
+                  className="rounded-full xl:h-36 xl:w-36 lg:h-32 lg:w-32 md:h-32 md:w-32 sm:h-32 sm:w-32 xs:w-32 xs:h-32 xs:w-20 xs:h-20 mt-[-2rem] border-4 border-white-600"
+                />
+              </div>
+            </div>
+            <div className="name text-center mt-14">
+              <h1 className="text-2xl xs:text-xs sm:text-l md:text-2xl lg:text-3xl">
+                {props.fName}
+                <span className="font-bold">{props.lName}</span>
+              </h1>
+              <p className="text-sm">{props.working}</p>
+            </div>
 
-            <div className="flex justify-center w-full bg-gray-300 ">
-                <div className='w-1/3 bg-white'>
-
-
-                    <div className='relative'>
-                        <div className="text-white bg-neutral-700 h-28  flex items-center justify-center text-xl ">
-                            <h1>{props.companyName}</h1>
-
-                        </div>
-                        <div className='absolute inset-0  h-4 mx-auto my-auto w-36 h-36 '>
-
-
-                        </div>
-
-                        <div className='h-14 bg-sky-200 flex justify-center'>
-                            <img src={img} className='rounded-full xl:h-36 xl:w-36 lg:h-32 lg:w-32 md:h-28md:w-28  sm:h-24 sm:w-24 xs:w-20 xs:h-20 mt-[-2rem] border-4 border-white-600' />
-                        </div>
-
-                    </div>
-
-                    <div className='name text-center mt-14'>
-                        <h1 className=' text-2xl xs:text-xs sm:text-l   md:text-2xl lg:text-3xl d'>{props.fName}<span className='font-bold'>{props.lName}</span></h1>
-                        <p className='text-sm'>{props.working}</p>
-                    </div>
-
-                    <div className="grid grid-cols-1 sm:grid-cols-2 mt-4 justify-items-center">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 :grid-cols-2 mt-4 justify-items-center p-4">
 
                         <div className="class p-2 w-16 text-left font-semibold ">ID </div>
                         <div className="class2 p-2 w-full text-left ">: {props.id} </div>
@@ -54,20 +50,15 @@ const Profile = (props) => {
 
                    
 
-                    <div className='flex justify-center flex-wrap items-center h-12 bg-neutral-700'>
-                        <InstagramIcon color="primary" sx={{ mx: '5px' }} />
-                        <FacebookOutlinedIcon color="primary" sx={{ mx: '5px' }} />
-                        <TwitterIcon color="primary" sx={{ mx: '5px' }} />
-                        <span className='text-white ml-4'> / brandname</span>
-                    </div>
-                    <div className='h-12 bg-sky-200  '>
-
-                    </div>
-
-
-                </div>
-            </div>
-
+                    <div className="flex justify-center flex-wrap items-center h-12 bg-neutral-700">
+            <InstagramIcon color="primary" sx={{ mx: '5px' }} />
+            <FacebookOutlinedIcon color="primary" sx={{ mx: '5px' }} />
+            <TwitterIcon color="primary" sx={{ mx: '5px' }} />
+            <span className="text-white ml-4"> / brandname</span>
+          </div>
+          <div className="h-12 bg-sky-200"></div>
+        </div>
+      </div>
 
 
         </>
