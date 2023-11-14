@@ -40,7 +40,7 @@ const Profile = (props) => {
                         <div className="class2 p-2 w-full text-left ">: {props.id} </div>
                         <div className="class p-2  w-16 text-left font-semibold">DOB </div>
                         <div className="class2 p-2 w-full text-left">: {props.dob} </div>
-                        <div className="class p-2  w-16 text-left font-semibold">Phone </div>
+                        <div className="class p-2  w-16 text-left font-semibold break-words">Phone </div>
                         <div className="class2 p-2 w-full text-left">: {props.phone} </div>
                         <div className="class p-2  w-16 text-left font-semibold">E-mail</div>
                         <div className="class2 p-2 w-full text-left">: {props.email} </div>
