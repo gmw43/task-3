@@ -1,0 +1,27 @@
+@media (max-width: 824px) {
+    .grid{
+        justify-items: left !important;
+    }
+.class{
+    width: 50% !important;
+    margin-left: 10px !important;
+    text-align: left !important;
+}
+.class2{
+    width: 100% !important;
+    margin-left: 10px !important;
+    padding: 0 !important;
+}
+.name{
+    margin-top: 10px !important;
+}
+    
+}
+
+@media (max-width: 640px) {
+    img{
+        width: 85px;
+        height: 50px;
+    }
+    
+}
